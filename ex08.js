@@ -1,8 +1,13 @@
 function multiplierParDeux(tableau) {
+    const result = []
+
     for(let i =0; i < tableau.length; i++){
-      tableau[i] = tableau[i] * 2 ;
+      result.push(tableau[i] * 2);
     }
-    return tableau;
+    return result;
+
+
+    return tableau.map((nombre) => nombre * 2)
   }
   
   console.log(multiplierParDeux([1, 2, 3])); 
